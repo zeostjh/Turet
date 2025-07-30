@@ -12,17 +12,16 @@
 AccelStepper stepperX(AccelStepper::DRIVER, STEP_X, DIR_X);
 AccelStepper stepperY(AccelStepper::DRIVER, STEP_Y, DIR_Y);
 
-// --- Joystick Pins ---
+
 #define JOY_X A0
 #define JOY_Y A1
 
-// --- Settings ---
-const int deadband = 50;      // joystick dead zone
-const int maxPosition = 1000; // max offset
-const int accel = 800;        // acceleration (steps/s^2)
-const int maxSpeed = 1000;    // maximum speed
 
-// --- Telemetry Cache ---
+const int deadband = 50;
+const int maxPosition = 1000;
+const int accel = 800;
+const int maxSpeed = 1000;
+
 int lastJoyX = -1;
 int lastJoyY = -1;
 long lastTargetX = -9999;
